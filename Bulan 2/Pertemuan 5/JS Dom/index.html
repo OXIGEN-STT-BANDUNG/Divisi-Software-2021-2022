@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Belajar DOM JS</title>
+</head>
+<body>
+
+<!-- 1. menyisipkan teks dengan js -->
+<h1 id="heading"> Teks Heading dari html</h1>
+
+<!-- 2. menyisipkan tag html baru dengan js -->
+<p>Belajar Dom <div id="div"></div>
+</p>
+
+<!-- 3. Buat element baru dengan js -->
+<div id="teknik"></div>
+
+<!-- 4. Menerima value dari html ke js -->
+<input type="text" name="input" id="input">
+
+<button id="button">Button</button>
+
+<!-- 5. Menerima value tidak sesuai dari html ke js -->
+<input type="text" name="name" id="name">
+<button id="login">Login</button>
+
+<!-- 6. Menerima multiple value dari html ke js -->
+<form>
+	<label>Form Sign In</label>
+	<input type="text" name="username" id="username">
+	<input type="text" name="password" id="password">
+
+	<button id="signin">Sign In</button>
+</form>
+
+</body>
+
+<script type="text/javascript">
+	// document.getElementById("")
+	// document.getElementByClassName("")
+	// document.querySelector("")
+
+	//1. menyisipkan teks dengan js
+	document.getElementById("heading").textContent = "Teks Heading dari js dom"
+
+	//2. menyisipkan tag html baru dengan js
+	document.getElementById("div").innerHTML = `
+	<ul>
+		<li>HTML</li>
+		<li>JS</li>
+	</ul>`
+
+	//3. Buat element baru dengan js
+	const technic = document.createElement("h1")
+	technic.textContent = "Anak Teknik"
+
+	document.getElementById("teknik").appendChild(technic)
+
+	// 4. Menerima value dari html ke js
+	const input = document.getElementById("input")
+	const button = document.getElementById("button")
+
+	// cara 1
+	// button.addEventListener("click", function () {
+	// 	alert(input.value)
+	// 	console.log(input.value)
+	// })
+
+	// cara 2
+	button.onclick = function (){
+		alert(input.value)
+		console.log(input.value)
+	}
+
+	// 5. Menerima value tidak sesuai dari html ke js
+	const name =  document.getElementById("name")
+	const login = document.getElementById("login")
+
+	login.addEventListener("blur", ()=>{
+		if(name.value.length < 6) alert("Nama kurang dari 6 karakter")
+	})
+
+	// 6. Menerima multiple value dari html ke js
+	const form =  document.getElementById("form")
+
+	form.addEventListener("submit", function(event){
+		event.preventDefault()
+
+		const formData = new FormData(form)
+		const values = Object.fromEntries(formData)
+	})
+</script>
+
+</html>
