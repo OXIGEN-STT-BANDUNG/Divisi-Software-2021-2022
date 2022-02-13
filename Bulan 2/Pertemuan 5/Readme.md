@@ -21,7 +21,13 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
 <img src="todo.gif">
 <p>File ada di folder JS DOM untuk referensi</p>
 
-<strong>Buatlah sistem login sederhana dengan js dom dan localStorage</strong>
+<strong>Buatlah sistem login sederhana</strong>
+
 <ul>
-	<li></li>
+	<li>1. Dengan HTML, CSS biasa aja, dan JS DOM</li>
+	<li>2. Dengan Local Storage</li>
+	<li>3. Dengan validasi sederhana</li>
+	<li>4. Push ke github kalian (nyicil buat portofolio)</li>
+	<li>5. Kirim link github (di publik ya) proyek ke google classroom</li>
+	<li>6. Ada kendala segera berkabar ke grup Discord atau Whatsapp ya</li>
 </ul>
