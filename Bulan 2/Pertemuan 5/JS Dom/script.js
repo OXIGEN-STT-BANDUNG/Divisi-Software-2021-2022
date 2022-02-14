@@ -7,12 +7,12 @@ const hapus = document.getElementById("hapus-todo")
 let todos
 
 // Validasi todo list pada localStorage
-if (localStorage.getItem("todo", todos) == null) {
+if (localStorage.getItem("todo") == null) {
 	// kosongkan array todo jika null di localStorage
 	todos = []
 }else{
 	// masukkan list dari localStorage ke variabel todo jika tidak null
-	todos = localStorage.getItem("todo", todos).split(",") 
+	todos = localStorage.getItem("todo").split(",") 
 	// catatan : split digunakan untuk mengubah dan memisahkan string menjadi array
 }
 

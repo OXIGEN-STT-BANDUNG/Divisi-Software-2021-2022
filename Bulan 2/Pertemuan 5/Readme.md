@@ -16,12 +16,18 @@ https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
 
+# Materi Location JavaScript
+
+https://developer.mozilla.org/en-US/docs/Web/API/Location
+
 # Challenge
 ### Todo list dengan js dom, localStorage, dan array
 <img src="todo.gif">
 <p>File ada di folder JS DOM untuk referensi</p>
 
 <strong>Buatlah sistem login sederhana</strong>
+<p>Dibawah ini hanya contoh aja, silahkan buat sekreatif teman-teman</p>
+<img src="contoh-login.gif">
 
 <ul>
 	<li>1. Dengan HTML, CSS biasa aja, dan JS DOM</li>
